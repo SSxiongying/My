@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#64ecd3">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/my_drawer"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <!--主布局-->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="200dp"
+        android:orientation="horizontal"
+        android:id="@+id/drawer_msg">
+    </LinearLayout>
+        <!--侧滑菜单-->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/afe"
+        android:id="@+id/drawer_main"
+        android:layout_gravity="left">
+        <ListView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

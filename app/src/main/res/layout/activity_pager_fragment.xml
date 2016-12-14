@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="页面一"
+            android:background="@color/peach"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="页面二"
+            android:background="@color/paleturquoise"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_there"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="页面三"
+            android:background="@color/gold"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="页面四"
+            android:background="@color/green"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <!--覆盖在导航按钮上的覆盖层，表示选中-->
+    <ImageView
+        android:id="@+id/img_overtab"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_btn"/>
+    <!--导航和视图的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f00"
+        android:layout_below="@+id/ll_tabs"/>
+    <RelativeLayout
+        android:id="@+id/fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_tabs"
+        android:background="#fff"
+        android:layout_marginBottom="2dp">
+    </RelativeLayout>
+    <!--ViewPager  主要是加载内容的-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_above="@+id/ll_tabs">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

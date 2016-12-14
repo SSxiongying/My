@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/one_menus"
+        app:showAsAction="never"
+        android:icon="@mipmap/drippler"
+        android:title="图标排序">
+    </item>
+    <item android:id="@+id/second_menus"
+        app:showAsAction="never"
+        android:icon="@mipmap/drippler"
+        android:title="智能分类">
+    </item>
+    <item android:id="@+id/there_menus"
+        app:showAsAction="never"
+        android:icon="@mipmap/drippler"
+        android:title="隐藏图标">
+    </item>
+</menu>

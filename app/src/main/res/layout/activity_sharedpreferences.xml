@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:hint="请输入用户名"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="66dp"/>
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_user"
+        android:layout_marginLeft="80dp"
+        android:hint="请输入密码"/>
+    <ImageButton
+        android:id="@+id/image_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/edit_pwd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/shape_btn"/>
+</RelativeLayout>

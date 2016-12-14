@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xy.myapplication">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/drippler"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+        </activity>
+        <activity android:name=".activity.activity_main">
+
+        </activity>
+        <activity android:name=".activity.activity_toolbar">
+        </activity>
+        <activity android:name=".activity.activity_myRecy">
+        </activity>
+        <activity android:name=".activity.activity_recycleview">
+        </activity>
+        <activity android:name=".activity.activity_viewpager_fragment">
+        </activity>
+        <activity android:name=".activity.activity_viewpager">
+        </activity>
+        <activity android:name=".activity.activity_arrayadapter_list">
+        </activity>
+        <activity android:name=".activity.activity_share">
+        </activity>
+        <activity android:name=".activity.activity_json">
+        </activity>
+        <activity android:name=".activity.activity_weather">
+
+        </activity>
+        <activity android:name=".activity.activity_jsons">
+        </activity>
+        <activity android:name=".activity.activity_seach">
+        </activity>
+        <activity android:name=".activity.acticity_search">
+        </activity>
+        <activity android:name=".activity.activity_meishi">
+
+        </activity>
+        <activity android:name=".activity.Activity_modle" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Activity_medle_second"></activity>
+    </application>
+
+</manifest>
